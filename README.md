@@ -11,3 +11,5 @@ The dataset in `data/raw/car_sales.csv` contains 600 car listings and 10 columns
 The initial quality check shows no complete missing values in the target column, but there are missing values in several predictors: `mileage_km` (12), `fuel_type` (22), `transmission` (14), and `engine_cc` (17). Price values range from about 366,299 to 1,380,962, with a median near 870,634.
 
 The baseline modeling work indicates that a linear regression pipeline is the strongest early candidate on the validation split, with lower MAE and RMSE than the tree-based alternatives.
+
+- Daily contribution 29: project checkpoint and documentation refresh (2026-09-15)
