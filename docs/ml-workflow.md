@@ -8,3 +8,4 @@
 6. Train baseline and regression models.
 7. Evaluate, compare, and document the results.
 8. Select the leading baseline and iterate on feature engineering and model refinement.
+9. Re-run the best-performing model after feature adjustments to verify improvement on the validation split.
