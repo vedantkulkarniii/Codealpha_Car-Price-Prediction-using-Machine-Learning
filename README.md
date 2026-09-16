@@ -12,6 +12,8 @@ The initial quality check shows no complete missing values in the target column,
 
 The baseline modeling work indicates that a linear regression pipeline is the strongest early candidate on the validation split, with lower MAE and RMSE than the tree-based alternatives.
 
+On 2026-09-16, the validation run confirmed this trend on the real dataset: Linear Regression achieved MAE 77,734.56, RMSE 99,990.42, and R-squared 0.6889, outperforming Gradient Boosting and Random Forest.
+
 - Daily contribution 29: project checkpoint and documentation refresh (2026-09-15)
 
 - Daily contribution 30: project checkpoint and documentation refresh (2026-09-15)

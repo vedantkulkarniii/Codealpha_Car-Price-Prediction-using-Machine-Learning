@@ -12,16 +12,12 @@ This prevents results from being remembered only informally and makes comparison
 
 | Model | MAE | RMSE | R-squared |
 | --- | ---: | ---: | ---: |
-| Linear Regression | 80,277.67 | 104,713.83 | 0.6588 |
-| Gradient Boosting | 88,946.24 | 115,636.93 | 0.5839 |
-| Random Forest | 97,450.75 | 123,817.80 | 0.5229 |
+| Linear Regression | 77,734.56 | 99,990.42 | 0.6889 |
+| Gradient Boosting | 88,811.57 | 115,716.09 | 0.5833 |
+| Random Forest | 98,038.98 | 124,826.51 | 0.5151 |
 
-Linear Regression performed best on this split. Five-fold shuffled cross-validation produced the following mean metrics:
+Linear Regression performed best on this split and remains the leading candidate. The validation result confirms that it yields the lowest MAE and RMSE and the highest R-squared among the tested models.
 
-| Model | Mean CV MAE | Mean CV RMSE | Mean CV R-squared |
-| --- | ---: | ---: | ---: |
-| Linear Regression | 77,983.48 | 98,216.19 | 0.6935 |
-| Gradient Boosting | 82,896.78 | 105,385.69 | 0.6471 |
-| Random Forest | 92,722.53 | 115,422.78 | 0.5753 |
+## Decision
 
-Linear Regression remains the leading candidate across both evaluation methods. Additional data-quality checks and error analysis are still needed before selecting a final model.
+The project will continue with a regression-focused workflow around the linear baseline, while exploring targeted feature engineering improvements such as price-normalized mileage, brand-level effects, and a more explicit age signal.
